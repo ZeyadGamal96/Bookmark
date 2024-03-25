@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+body {
+    background-color: #F7ECDE;
+}
+
+
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+   
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    padding: 0;
+    bottom: 0;
+    width: 270px; 
+    height: 20px;
+    background-color: #FEC260 ;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::after {
+    height: 40%; 
+}
+
+
+
+
+h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    background: linear-gradient( to right, #3FA65C 0% 40% , #B3AC4A 60% 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 50px;
+    padding: 70px;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    position: relative;
+
+}
+
+.content button {
+    background-color: #D1512D;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+
+
+}
+
+.content button:hover {
+    background-color: #BB4120;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./images/transparent-banner-icon-bookmark-icon-5fff5cb7789709.3204376416105709354939.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container mx-auto p-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center pt-5 d-flex align-items-center justify-content-center">Bookmarker</h1>
+                <div class="content">
+                    <h2 class="text-center"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+                    <div class="p-2">
+                        <label for="siteName">
+                            <p>Site Name</p>
+                        </label>
+                        <input oninput="validationName()" type="text" id="siteName" class="form-control">
+                        <div class="wrong-name text-danger d-none">Site name must contain at least 3 characters</div>
+                    </div>
+                    <div class="p-2">
+                        <label for="siteURL">
+                            <p>Site URL</p>
+                        </label>
+                        <input oninput="validationURL()" type="text" id="siteURL" class="form-control">
+                        <div class="wrong-url text-danger d-none">Site URL must be a valid one</div>
+                    </div>
+                    <div class="pb-5"><button onclick="submit()">Submit</button></div>
+                    <div class="alert text-danger text-center d-none">Please fill in all fields correctly</div>
+                </div>
+                <table class="table text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="webTable">
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
